@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="MapReduceAkka">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../Desktop/sonstiges/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="MapReduceAkka.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/scala-library.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-actor_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-agent_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-camel_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-channels-experimental_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-cluster_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-contrib_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-dataflow_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-durable-mailboxes-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-file-mailbox_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-kernel_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-mailboxes-common_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-multi-node-testkit_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-remote_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-remote-tests_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-slf4j_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-testkit_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-transactor_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/akka-zeromq_2.10-2.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/camel-core-2.10.3.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/config-1.0.2.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/jna-3.0.9.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/jnr-constants-0.8.2.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/netty-3.6.6.Final.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/protobuf-java-2.4.1.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/scalabuff-runtime_2.10-1.2.0.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/scala-reflect-2.10.2.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/scala-stm_2.10-0.7.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/slf4j-api-1.7.2.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/uncommons-maths-1.2.2a.jar"/>
+        <pathelement location="../../allStuff/Concurrency auf frameworkEbene/Akka/akka-2.2.0/lib/akka/zeromq-scala-binding_2.10-0.0.7.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="MapReduceAkka.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Main (2)">
+        <java classname="Main.Main" failonerror="true" fork="yes">
+            <classpath refid="MapReduceAkka.classpath"/>
+        </java>
+    </target>
+</project>

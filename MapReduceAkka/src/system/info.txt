@@ -1,0 +1,29 @@
+ I compare concurrency frameworks and want to do little benchmarking 
+(I know that is very very difficult on the JVM). Thus, I want to ensure the code is good (fast).
+
+I tried to solve the following problem (It's fictive) :
+
+========Problem=========
+
+There is a list of users.
+Each User has a sequence/list of places he has visited in the past 
+A place in the Sequence is represented by just an id(int). So one place can occur several times in the sequence.
+
+Now I want to determine how often each place has been visited.
+The main requirement is to exploit parallelism. 
+
+=======My Solution=========
+
+A Master Actors gets the list of users and he dispatches the users by sending them to a router. The routees build a hashmap (place:numberOfVisits) for each received user
+and send each entry of the map to a reducer (decision by modulo <numberOfReducer>) which sums up all entrys he receives. When the master sent all Users, it sends a "finish" which is 
+read by the mapper and forwarded to the reducer. When the reducers finally got from each Mapper the "finish"-> they send their maps back to the Master which sums up all Maps.
+
+======Question========
+I thought the problem is similar to Map/Reduce althoug it's not distributed and I wanted to figure out how well actors can be exploit for that.
+How can I improve the Code? Do you know better solutions reffering to Akka?  
+
+
+
+
+
+
